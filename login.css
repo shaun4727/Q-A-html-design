@@ -1,0 +1,78 @@
+body{
+    background: var(--default-background);
+}
+
+.login-root-div{
+    background: #fff;
+    height: 500px;
+    
+}
+
+.login-root-div .qa_logo {
+    margin: 30px auto;
+    display: block;
+}
+
+.login-root-div .login_form{
+    margin-top: 35px;
+}
+
+.login-root-div .login_form .first_part{
+    width: 50%;
+    padding-left: 15%;
+    margin-top: 50px;
+    position: relative;
+}
+.login-root-div .login_form .first_part:after{
+    content: '';
+    position: absolute;
+    top: -25px;
+    right: 0;
+    width: 1px;
+    height: 200px;
+    background: var(--default-background);
+}
+.login-root-div .login_form .first_part p{
+    border: 1px solid var(--default-border-color);
+    width: 90%;
+    padding: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.login-root-div .login_form .first_part h5{
+    color: var(--default-font-color);
+    cursor: pointer;
+}
+.login-root-div .login_form .second_part{
+    width:50%;
+    padding-left: 3%;
+    padding-right: 15%;
+    margin-top: 0px;
+}
+.login-root-div .login_form .second_part input:focus{
+    box-shadow: none;
+}
+.login-root-div .login_form .second_part .pass{
+    margin-top: 15px;
+}
+.login-root-div .login_form .second_part h6{
+    font-size: 22px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--default-border-color);
+    padding-bottom: 15px;
+}
+.login-root-div .login_form .second_part .forgot_login p{
+    margin-top: 12px;
+    cursor: pointer;
+}
+.login-root-div .login_form .second_part .forgot_login .login-btn {
+    background: var(--login-btn);
+    color: #fff;
+    margin-top: 10px;
+    width: 100px;
+    text-align: center;
+    margin: 10px 5px;
+    box-shadow: 10px 10px 18px var(--default-background);
+    height: 30px;
+    cursor: pointer;
+}

@@ -34,23 +34,31 @@ body{
     height: 37px;
     margin-top: 5px;
     border: 1px solid var(--default-border-color);
+    padding: 0px;
 }
 
-.nav-search span {
+.nav-search .input-box span {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.nav-search input{
+.nav-search .input-box input{
     border:none;
 }
-.nav-search input:focus{
+.nav-search .input-box input:focus{
     box-shadow:none;
 }
 .add-question {
     height: 40px;
     background-color: var(--default-btn-color);
     border:none;
+}
+.add-question:focus,.add-question:active{
+    box-shadow: none;
+    border: none;
+}
+.add-question:hover{
+    background: var(--default-btn-hover);
 }
 .nav-item{
     display:flex;
@@ -115,6 +123,28 @@ body{
 }
 
 /* mobile view ends */
+
+
+/* suggested questions starts */
+.suggested_ques{
+    background: #fff;
+    margin-top:10px;
+    display:none;
+}
+.suggested_ques ul {
+    list-style-type: none;
+    padding: 0px;
+}
+.suggested_ques ul li {
+    padding: 5px 15px;
+    border-bottom: 1px solid var(--default-background);
+    cursor: pointer;
+    
+}
+.suggested_ques ul li:hover {
+    background: var(--default-background);
+}
+/* suggested question ends */
 
 /* navbar styling ends */
 
@@ -188,7 +218,7 @@ input.form-control.ask_input:focus {
     padding:15px;
     margin-top: 15px;
     background: #fff;
-    height: 87%;
+    height: 88%;
 }
 .main-section .post-section .row1 .profile_img img {
     width: 50px;
@@ -223,6 +253,9 @@ input.form-control.ask_input:focus {
     height: 35px;
     border: 1px solid var(--default-border-color);
     border-radius: 15px;
+    float: left;
+    margin-right: 15px;
+    clear: both;
 }
 .main-section .post-section .row2 .up_down_btn .upvote-sec{
     border-right: 1px solid var(--default-border-color);
@@ -253,4 +286,12 @@ input.form-control.ask_input:focus {
     border-bottom-right-radius: 15px;
 }
 .main-section .post-section .row2 .up_down_btn .down_vote .d-vote{margin-left:5px;}
+.main-section .post-section .row2 .comnt_share {
+    margin-left: 130px;
+    margin-top: 5px;
+    display: flex;
+
+}
+.main-section .post-section .row2 .comnt_share .comment,.main-section .post-section .row2 .comnt_share .share{cursor:pointer;}
+
 /* Post section ends */

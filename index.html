@@ -14,7 +14,7 @@
   </head>
   <body>
     <nav>
-        <div class="container-fluid desktop-view">
+        <div class="container-fluid desktop-view fixed-top">
             <div class="row" style="margin: 0 60px;">
                 <div class="col-lg-10 offset-lg-1 col-md-10 col-sm-12 offset-md-1">
                     <div class="row">
@@ -25,9 +25,20 @@
                             <li class="nav-item"><a href="" class="nav-link" title="Spaces"><i class="material-icons">assistant_photo</i></a></li>  
                             <li class="nav-item"><a href="" class="nav-link" title="Notifications"><i class="material-icons">notifications_active</i></a></li>  
                         </ul>
-                        <div class="d-flex form-group col-lg-4 col-md-4 col-sm-4 nav-search">
-                            <span><i class="material-icons">search</i></span>
-                            <input type="text" class="form-control" type="search" aria-label="search" placeholder="Search Your Query">
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 nav-search">
+                            <div class="input-box d-flex">
+                                <span><i class="material-icons">search</i></span>
+                                <input type="text" class="form-control" type="search" aria-label="search" placeholder="Search Your Query">
+                            </div>
+                           <div class="suggested_ques">
+                            <ul>
+                                <li>This is question no 1?</li>
+                                <li>This is question no 2?</li>
+                                <li>This is question no 3?</li>
+                                <li>This is question no 4?</li>
+                                <li>This is question no 5?</li>
+                            </ul>
+                           </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 d-flex justify-content-end">
                             <div class="profile d-flex flex-column justify-content-center">
@@ -58,7 +69,7 @@
 
     <!-- main section starts -->
     <div class="container-fluid">
-        <div class="row mt-5">
+        <div class="row" style="margin: 85px 0;">
             <div class="col-lg-10 offset-lg-1 col-md-10 col-sm-12 offset-md-1">
                 <div class="row" style="margin: 0 60px;">
                     <!-- space part starts -->
@@ -133,7 +144,19 @@
                                         comes from a line in section 1.10.32.
                                     </p>
                                 </div>
-                                <div class="up_down_btn d-flex flex-row justify-content-start"> <div class="upvote-sec d-flex flex-row pt-1"><i class="material-icons">file_upload</i> <span>Upvote</span> <span>26k</span></div> <div class="down_vote"><i class="material-icons pt-1 d-vote">file_download</i></div> </div>
+                                <div class="up_down_btn d-flex flex-row justify-content-start"> 
+                                    <div class="upvote-sec d-flex flex-row pt-1">
+                                        <i class="material-icons">file_upload</i> 
+                                        <span>Upvote</span> <span>26k</span>
+                                    </div> 
+                                    <div class="down_vote">
+                                        <i class="material-icons pt-1 d-vote">file_download</i>
+                                    </div> 
+                                </div>
+                                <div class="comnt_share">
+                                    <div class="comment d-flex flex-row justify-content-center"><i class="material-icons">comment</i> <span>Comment</span></div>
+                                    <div class="share d-flex flex-row justify-content-center mx-2"> <i class="material-icons">share</i> <span>Share</span> </div>
+                                </div>
                             </div>
                         </div>
                     </div>

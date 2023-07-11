@@ -1,4 +1,4 @@
-body{
+.whole-page{
     background: var(--default-background);
 }
 
@@ -49,7 +49,7 @@ body{
     padding-right: 15%;
     margin-top: 0px;
 }
-.login-root-div .login_form .second_part input:focus{
+#signupModal .modal-body input:focus,.login-root-div .login_form .second_part input:focus{
     box-shadow: none;
 }
 .login-root-div .login_form .second_part .pass{
@@ -65,7 +65,7 @@ body{
     margin-top: 12px;
     cursor: pointer;
 }
-.login-root-div .login_form .second_part .forgot_login .login-btn {
+.login-btn {
     background: var(--login-btn);
     color: #fff;
     margin-top: 10px;
@@ -75,4 +75,11 @@ body{
     box-shadow: 10px 10px 18px var(--default-background);
     height: 30px;
     cursor: pointer;
+    border: 1px solid var(--login-btn);
+    border-radius: 25px;
+}
+
+/* Sign up modal height */
+#signupModal .modal-content{
+    margin-top: 160px;
 }

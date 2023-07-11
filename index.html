@@ -19,9 +19,9 @@
                 <div class="col-lg-10 offset-lg-1 col-md-10 col-sm-12 offset-md-1">
                     <div class="row">
                         <ul class="nav col-sm-4 col-lg-4 col-md-4">
-                            <li class="nav-item"><a href="" class="nav-link" title="Home"><i class="material-icons">home</i></a></li>
-                            <li class="nav-item"><a href="" class="nav-link" title="Answer"><i class="material-icons">question_answer</i></a></li>
-                            <li class="nav-item"><a href="" class="nav-link" title="Follow"><i class="material-icons">web</i></a></li>
+                            <li class="nav-item"><a href="index.html" class="nav-link" title="Home"><i class="material-icons">home</i></a></li>
+                            <li class="nav-item"><a href="question.html" class="nav-link" title="Answer"><i class="material-icons">question_answer</i></a></li>
+                            <li class="nav-item"><a href="following.html" class="nav-link" title="Follow"><i class="material-icons">web</i></a></li>
                             <li class="nav-item"><a href="" class="nav-link" title="Spaces"><i class="material-icons">assistant_photo</i></a></li>  
                             <li class="nav-item"><a href="" class="nav-link" title="Notifications"><i class="material-icons">notifications_active</i></a></li>  
                         </ul>
@@ -74,7 +74,7 @@
                 <div class="row" style="margin: 0 60px;">
                     <!-- space part starts -->
                     <ul class="nav col-lg-2 col-md-2 col-sm-12 d-flex flex-column space">
-                        <li> <a href="" class="btn btn-primary"><i class="material-icons">add</i><span>Create Space</span></a> </li>
+                        <li> <a href="" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#addSpaceModal"><i class="material-icons">add</i><span>Create Space</span></a> </li>
                         <li> <a href=""><img src="./images/profile.png" class="img-fluid" alt=""> <span>Space Title</span></a> </li>
                         <li> <a href=""><img src="./images/profile.png" class="img-fluid" alt=""> <span>Space Title</span></a> </li>
                         <li> <a href=""><img src="./images/profile.png" class="img-fluid" alt=""> <span>Space Title</span></a> </li>
@@ -102,6 +102,7 @@
                             </div>
                         </div>
                         <div class="post-section">
+                            <h6 class="question">Contrary to popular belief, Lorem Ipsum is not simply random text?</h6>
                             <div class="row1">
                                 <div class="profile_img">
                                     <img src="./images/profile.png" alt="">
@@ -112,6 +113,7 @@
                                 </div>
                             </div>
                             <div class="row2">
+                                
                                 <div class="post-img"> <img src="./images/post_img.png" class="img-fluid" alt=""> </div>
                                 <div class="post-para">
                                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in
@@ -144,18 +146,21 @@
                                         comes from a line in section 1.10.32.
                                     </p>
                                 </div>
-                                <div class="up_down_btn d-flex flex-row justify-content-start"> 
-                                    <div class="upvote-sec d-flex flex-row pt-1">
-                                        <i class="material-icons">file_upload</i> 
-                                        <span>Upvote</span> <span>26k</span>
-                                    </div> 
-                                    <div class="down_vote">
-                                        <i class="material-icons pt-1 d-vote">file_download</i>
-                                    </div> 
-                                </div>
-                                <div class="comnt_share">
-                                    <div class="comment d-flex flex-row justify-content-center"><i class="material-icons">comment</i> <span>Comment</span></div>
-                                    <div class="share d-flex flex-row justify-content-center mx-2"> <i class="material-icons">share</i> <span>Share</span> </div>
+                                <p class="no-of-ans"> 1 of 5 answers</p>
+                                <div class="action-section">
+                                    <div class="up_down_btn d-flex flex-row justify-content-start"> 
+                                        <div class="upvote-sec d-flex flex-row pt-1">
+                                            <i class="material-icons">file_upload</i> 
+                                            <span>Upvote</span> <span>26k</span>
+                                        </div> 
+                                        <div class="down_vote">
+                                            <i class="material-icons pt-1 d-vote">file_download</i>
+                                        </div> 
+                                    </div>
+                                    <div class="comnt_share">
+                                        <div class="comment d-flex flex-row justify-content-center"><i class="material-icons">comment</i> <span>Comment</span></div>
+                                        <div class="share d-flex flex-row justify-content-center mx-2"> <i class="material-icons">share</i> <span>Share</span> </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -163,6 +168,35 @@
                 </div>
             </div>
         </div>
+
+        <!-- adding space modal starts -->
+        <div class="modal fade " id="addSpaceModal" tabindex="-1" aria-labelledby="addSpaceModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="signupModalLabel">Add Space</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="name">Add Space</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">Choose an image for Space</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                  <span class="login-btn">Add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- adding space modal ends -->
+
+
     </div>
     <!-- main section ends -->
     <script>

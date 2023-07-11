@@ -1,0 +1,197 @@
+
+body{
+    background: var(--body-background);
+}
+
+/* Navbar styling starting */
+
+/* desktop view */
+.mobile-view{
+    display:none;
+}
+.slide-in-menu{
+    display:none;
+}
+.desktop-view {
+    background: #fff;
+    box-shadow: 5px 2px 40px rgba(0, 0, 0, 0.2);
+}
+.profile{
+    width:75px;
+}
+
+.profile img {
+    width: 50px;
+    border: 1px solid #fff;
+    border-radius: 66%;
+    height: 50px;
+}
+
+.add-question{
+    
+}
+.nav-search {
+    height: 37px;
+    margin-top: 5px;
+    border: 1px solid var(--default-border-color);
+    padding: 0px;
+}
+
+.nav-search .input-box span {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.nav-search .input-box input{
+    border:none;
+}
+.nav-search .input-box input:focus{
+    box-shadow:none;
+}
+.add-question {
+    height: 40px;
+    background-color: var(--default-btn-color);
+    border:none;
+}
+.add-question:focus,.add-question:active{
+    box-shadow: none;
+    border: none;
+}
+.add-question:hover{
+    background: var(--default-btn-hover);
+}
+.nav-item{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+}
+.desktop-view .nav-link i{
+    color: black;
+}
+.desktop-view .nav-link i:hover{
+    background:#fff;
+}
+.desktop-view .nav-link:focus, .desktop-view .nav-link:hover {
+    
+    border-bottom: 2px solid var(--default-btn-color);
+}
+.desktop-view .nav-link i:focus, .desktop-view .nav-link i:hover {
+    background: var(--default-btn-color);
+    color: #fff;
+}
+
+/* desktop view ends */
+
+/* mobile view starts */
+@media only screen and (max-width: 1195px){
+    .mobile-view{
+        cursor: pointer;
+    }
+    .mobile-view{
+        display:block;
+    }
+    .slide-in-menu{
+        display:block;
+    }
+    .slide-in-menu {
+        width: 250px;
+        height: 700px;
+        position: relative;
+        left: -250px;
+        transition-property: left;
+    }
+    
+    .slide-in-menu-duration{
+        left: 0px;
+        transition-duration: .5s;
+    }
+    .display-none{
+        display:none;
+    }
+    .mobile-nav{
+        color: #000;
+        display:flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+    #slide-menu{
+        box-shadow: 5px 10px 18px #888888;
+    }
+    .desktop-view{
+        display:none;
+    }
+}
+
+/* mobile view ends */
+
+
+/* suggested questions starts */
+.suggested_ques{
+    background: #fff;
+    margin-top:10px;
+    display:none;
+}
+.suggested_ques ul {
+    list-style-type: none;
+    padding: 0px;
+}
+.suggested_ques ul li {
+    padding: 5px 15px;
+    border-bottom: 1px solid var(--default-background);
+    cursor: pointer;
+    
+}
+.suggested_ques ul li:hover {
+    background: var(--default-background);
+}
+/* suggested question ends */
+
+/* navbar styling ends */
+
+
+/* question section */
+
+/* common padding */
+.ques-sec,.post-sec .profile,.post-sec .action-section,.post-sec .post-para{ padding:15px;}
+
+
+.ques-sec{background:#fff; }
+.related-ques{ padding-top:5px; margin-left:10px;}
+.related-ques h6{border-bottom:1px solid var(--default-background); padding-bottom: 5px;}
+
+.ques-sec .btn-sec{display:flex; gap:5px;}
+.ques-sec button{border:1px solid var(--default-background); background:#fff; display:flex; align-items:center; border-radius:5px;}
+
+.related-ques ul{list-style-type:none; padding:0;}
+.related-ques ul li{padding-bottom: 7px; cursor:pointer;}
+.related-ques ul li:hover{text-decoration:underline;}
+
+
+/* post section */
+
+.post-sec{margin-top:10px; background:#fff; padding-bottom:15px; }
+
+.post-sec .profile{width:100%; display:flex; align-items:center; border-bottom:1px solid var(--default-background);}
+.post-sec .profile .profile-detail{line-height:.3; margin:10px 0 0 7px;}
+.post-sec .profile .profile-detail p{display:flex; flex-direction: row; width:100%; align-items:center;}
+.post-sec .profile .profile-detail p:first-child .follow{cursor:pointer;}
+.post-sec .profile .profile-detail p:first-child .name{font-weight:bolder; cursor:pointer;}
+.post-sec .profile .profile-detail p:last-child{font-size:12px; }
+.post-sec .profile .profile-detail p span:first-child::after{content: "."; position: relative; top: -4px; padding: 3px;}
+
+
+.post-sec .post-para{margin-top:5px; }
+.post-sec .post-para p{color:var(--default-font-color); text-align:justify; line-height:1.1;}
+
+
+    /* post action */
+    .post-sec .action-section{display:flex; justify-content:space-between;}
+    .post-sec .action-section .up_down_btn{ display:flex; align-items:center;}
+    .post-sec .action-section .up_down_btn .upvote-sec{border:1px solid var(--default-background); border-radius:15px 0 0 15px; padding:5px; cursor:pointer;}
+    .post-sec .action-section .up_down_btn .upvote-sec span.upvote::after{content:'.'; position: relative; top:-4px; padding:3px;}
+    .post-sec .action-section .up_down_btn .upvote-sec:hover,.post-sec .action-section .up_down_btn .down_vote:hover{background:var(--default-background);}
+    .post-sec .action-section .up_down_btn .down_vote{border:1px solid var(--default-background); padding:5px; border-radius:0 15px 15px 0; border-left:none; cursor:pointer;}
+    .post-sec .action-section .up_down_btn .upvote-sec,.post-sec .action-section .up_down_btn .down_vote{ display:flex; align-items:center;}
+    .post-sec .action-section .comnt_share{display:flex; gap:5px; align-items:center;}
+
+    .post-sec .action-section .comnt_share .comment,.post-sec .action-section .comnt_share .share{display:flex; align-items:center;}

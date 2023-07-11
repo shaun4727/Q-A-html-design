@@ -220,6 +220,7 @@ input.form-control.ask_input:focus {
     background: #fff;
     height: 88%;
 }
+.main-section .post-section .question{text-align:justify; font-weight: bolder; cursor:pointer;}
 .main-section .post-section .row1 .profile_img img {
     width: 50px;
     height: 50px;
@@ -244,6 +245,11 @@ input.form-control.ask_input:focus {
     background: #493e3e;
     height: 2px;
 }
+
+.main-section .post-section .row2 .action-section {
+    display: flex;
+    justify-content: space-between;
+}
 .main-section .post-section .row1 .profile_img .inner_row1 .follow{ color:var(--ocean-blue); cursor:pointer;}
 .main-section .post-section .row1 .profile_img .inner_row1 .time{ color:var(--default-font-color);}
 .main-section .post-section .row2 .post-img img{height:400px; width:100%;}
@@ -257,6 +263,7 @@ input.form-control.ask_input:focus {
     margin-right: 15px;
     clear: both;
 }
+.main-section .post-section .row2 .no-of-ans{font-size:12px; color: black; opacity:.9; text-align: right; cursor:pointer;}
 .main-section .post-section .row2 .up_down_btn .upvote-sec{
     border-right: 1px solid var(--default-border-color);
     cursor:pointer;
@@ -287,11 +294,25 @@ input.form-control.ask_input:focus {
 }
 .main-section .post-section .row2 .up_down_btn .down_vote .d-vote{margin-left:5px;}
 .main-section .post-section .row2 .comnt_share {
-    margin-left: 130px;
-    margin-top: 5px;
     display: flex;
-
+    margin: auto 0;
 }
 .main-section .post-section .row2 .comnt_share .comment,.main-section .post-section .row2 .comnt_share .share{cursor:pointer;}
 
 /* Post section ends */
+
+.login-btn {
+    background: var(--login-btn);
+    color: #fff;
+    margin-top: 10px;
+    width: 100px;
+    text-align: center;
+    margin: 10px 5px;
+    box-shadow: 10px 10px 18px var(--default-background);
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid var(--login-btn);
+    border-radius: 25px;
+}
+
+

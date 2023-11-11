@@ -439,13 +439,13 @@ input.form-control.ask_input:focus {
 	box-shadow: none;
 }
 
-.comments-all{
+.comments-all {
     padding: 15px 0;
-    display: flex;
-
+    display: grid;
+    grid-template-columns: 30px auto;
 }
 .comments-all .letter-pic{
-    width: 54px;
+    width: 30px;
 }
 .comments-all .name-comment{
     padding-left: 10px;

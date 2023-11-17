@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./index.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Q&A</title>
   </head>
   <body>
@@ -25,19 +26,20 @@
                             <li class="nav-item"><a href="" class="nav-link" title="Spaces"><i class="material-icons">assistant_photo</i></a></li>  
                             <li class="nav-item"><a href="" class="nav-link" title="Notifications"><i class="material-icons">notifications_active</i></a></li>  
                         </ul>
+                       
                         <div class="form-group col-lg-4 col-md-4 col-sm-4 nav-search">
                             <div class="input-box d-flex">
                                 <span><i class="material-icons">search</i></span>
                                 <input type="text" class="form-control" type="search" aria-label="search" placeholder="Search Your Query">
                             </div>
                            <div class="suggested_ques">
-                            <ul>
-                                <li>This is question no 1?</li>
-                                <li>This is question no 2?</li>
-                                <li>This is question no 3?</li>
-                                <li>This is question no 4?</li>
-                                <li>This is question no 5?</li>
-                            </ul>
+                                <ul>
+                                    <li>This is question no 1?</li>
+                                    <li>This is question no 2?</li>
+                                    <li>This is question no 3?</li>
+                                    <li>This is question no 4?</li>
+                                    <li>This is question no 5?</li>
+                                </ul>
                            </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 d-flex justify-content-end">
@@ -61,6 +63,15 @@
                 </div>
             </div>
         </div>
+        <div class="notification">
+            <ul>
+                <li>This is question no 1?</li>
+                <li>This is question no 2?</li>
+                <li>This is question no 3?</li>
+                <li>This is question no 4?</li>
+                <li>This is question no 5?</li>
+            </ul>
+       </div>
         <div class="container-fluid mobile-view">
             <span id="mobile-menu"><i class="material-icons" id="mobile-menu-open">menu</i></span>
             <span id="mobile-menu-close" class="display-none"><i class="material-icons" id="mobile-menu-close">close</i></span>
@@ -159,11 +170,11 @@
                                 <div class="action-section">
                                     <div class="up_down_btn d-flex flex-row justify-content-start"> 
                                         <div class="upvote-sec d-flex flex-row pt-1">
-                                            <i class="material-icons">file_upload</i> 
+                                            <i class="fa-solid fa-thumbs-up"></i> 
                                             <span>Upvote</span> <span>26k</span>
                                         </div> 
                                         <div class="down_vote">
-                                            <i class="material-icons pt-1 d-vote">file_download</i>
+                                            <i class="fa-solid fa-thumbs-down"></i>
                                         </div> 
                                     </div>
                                     <div class="comnt_share">
@@ -184,8 +195,8 @@
                                             a piece of a treatise on the theory of ethics, very popular during
                                            the Renaissance.</p>
                                            <div class="button-group">
-                                            <i class="material-icons btn-element">file_upload</i> 
-                                            <i class="material-icons btn-element">file_download</i>
+                                            <i class="fa-solid fa-thumbs-up"></i> 
+                                            <i class="fa-solid fa-thumbs-down"></i> 
                                             <span class="btn-element"><strong>Reply</strong></span>
                                         </div>
                                     </div>

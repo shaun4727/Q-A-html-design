@@ -128,7 +128,7 @@ body {
 .suggested_ques {
 	background: #fff;
 	margin-top: 10px;
-	display: none;
+	display:none;
 }
 .suggested_ques ul {
 	list-style-type: none;
@@ -143,6 +143,30 @@ body {
 	background: var(--default-background);
 }
 /* suggested question ends */
+/* Notification starts */
+.notification {
+    background: #fff;
+    margin-top: -20px;
+    position: absolute;
+    width: 300px;
+    left: 270px;
+    text-align: center;
+    z-index: 9;
+    display:none;
+}
+.notification ul {
+	list-style-type: none;
+	padding: 0px;
+}
+.notification ul li {
+	padding: 5px 15px;
+	border-bottom: 1px solid var(--default-background);
+	cursor: pointer;
+}
+.notification ul li:hover {
+	background: var(--default-background);
+}
+/* Notification ends */
 
 /* on click profile tab */
 .profile-box ul {
@@ -332,7 +356,7 @@ input.form-control.ask_input:focus {
 	border-bottom-left-radius: 15px;
 }
 .main-section .post-section .row2 .up_down_btn .upvote-sec i:nth-child(1) {
-	margin-left: 10px;
+	margin: 3px 3px 3px 7px;
 }
 .main-section .post-section .row2 .up_down_btn .upvote-sec span {
 	margin-right: 10px;
@@ -350,6 +374,7 @@ input.form-control.ask_input:focus {
 .main-section .post-section .row2 .up_down_btn .down_vote {
 	width: 100%;
 	cursor: pointer;
+    margin: 5px;
 }
 .main-section .post-section .row2 .up_down_btn .down_vote:hover {
 	background: var(--default-background);
@@ -461,6 +486,7 @@ input.form-control.ask_input:focus {
     justify-content: start;
     align-items:center;
     opacity:.7;
+    gap: 15px;
 }
 
 .comments-all .btn-element{

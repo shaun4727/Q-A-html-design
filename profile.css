@@ -1,0 +1,281 @@
+body {
+	background: var(--body-background);
+}
+
+/* Navbar styling starting */
+
+/* desktop view */
+.mobile-view {
+	display: none;
+}
+.slide-in-menu {
+	display: none;
+}
+.desktop-view {
+	background: #fff;
+	box-shadow: 5px 2px 40px rgba(0, 0, 0, 0.2);
+}
+.profile {
+	width: 75px;
+}
+
+.profile img {
+	width: 50px;
+	border: 1px solid #fff;
+	border-radius: 66%;
+	height: 50px;
+}
+
+.add-question {
+}
+.nav-search {
+	height: 37px;
+	margin-top: 5px;
+	border: 1px solid var(--default-border-color);
+	padding: 0px;
+}
+
+.nav-search .input-box span {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.nav-search .input-box input {
+	border: none;
+}
+.nav-search .input-box input:focus {
+	box-shadow: none;
+}
+.add-question {
+	height: 40px;
+	background-color: var(--default-btn-color);
+	border: none;
+}
+.add-question:focus,
+.add-question:active {
+	box-shadow: none;
+	border: none;
+}
+.add-question:hover {
+	background: var(--default-btn-hover);
+}
+.nav-item {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.desktop-view .nav-link i {
+	color: black;
+}
+.desktop-view .nav-link i:hover {
+	background: #fff;
+}
+.desktop-view .nav-link:focus,
+.desktop-view .nav-link:hover {
+	border-bottom: 2px solid var(--default-btn-color);
+}
+.desktop-view .nav-link i:focus,
+.desktop-view .nav-link i:hover {
+	background: var(--default-btn-color);
+	color: #fff;
+}
+
+/* desktop view ends */
+
+/* mobile view starts */
+@media only screen and (max-width: 1195px) {
+	.mobile-view {
+		cursor: pointer;
+	}
+	.mobile-view {
+		display: block;
+	}
+	.slide-in-menu {
+		display: block;
+	}
+	.slide-in-menu {
+		width: 250px;
+		height: 700px;
+		position: relative;
+		left: -250px;
+		transition-property: left;
+	}
+
+	.slide-in-menu-duration {
+		left: 0px;
+		transition-duration: 0.5s;
+	}
+	.display-none {
+		display: none;
+	}
+	.mobile-nav {
+		color: #000;
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+	}
+	#slide-menu {
+		box-shadow: 5px 10px 18px #888888;
+	}
+	.desktop-view {
+		display: none;
+	}
+}
+
+/* mobile view ends */
+
+/* suggested questions starts */
+.suggested_ques {
+	background: #fff;
+	margin-top: 10px;
+	display: none;
+}
+.suggested_ques ul {
+	list-style-type: none;
+	padding: 0px;
+}
+.suggested_ques ul li {
+	padding: 5px 15px;
+	border-bottom: 1px solid var(--default-background);
+	cursor: pointer;
+}
+.suggested_ques ul li:hover {
+	background: var(--default-background);
+}
+/* suggested question ends */
+/* Notification starts */
+.notification {
+	background: #fff;
+	margin-top: -20px;
+	position: absolute;
+	width: 300px;
+	left: 270px;
+	text-align: center;
+	z-index: 9;
+	display: none;
+}
+.notification ul {
+	list-style-type: none;
+	padding: 0px;
+}
+.notification ul li {
+	padding: 5px 15px;
+	border-bottom: 1px solid var(--default-background);
+	cursor: pointer;
+}
+.notification ul li:hover {
+	background: var(--default-background);
+}
+/* Notification ends */
+
+/* on click profile tab */
+.profile-box ul {
+	position: absolute;
+	top: 55px;
+	list-style: none;
+	background: #fff;
+	margin: 0;
+	padding: 15px 0;
+	right: 230px;
+	width: 250px;
+	display: none;
+}
+.profile-box img {
+	width: 50px;
+	border: 1px solid #fff;
+	border-radius: 66%;
+	height: 50px;
+}
+.profile-box ul li {
+	padding: 0px 15px;
+}
+/* on click profile tab ends */
+
+/* profile detail page */
+.main-section-profile {
+	background: #fff;
+}
+
+.profile-detail {
+	display: flex;
+	padding: 15px;
+}
+.profile-detail .profile-pic img {
+	max-width: 100%;
+	height: auto;
+	width: 110px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	height: 110px;
+}
+
+.main-section-profile .intro {
+    margin-left: 15px;
+}
+.main-section-profile .intro p {
+    color: var(--default-font-color);
+	font-size: 14px;
+}
+
+.main-section-profile .detail-entry {
+    padding: 15px;
+}
+.main-section-profile .detail-entry h5 {
+    border-bottom: 1px solid var(--default-background);
+	padding-bottom: 10px;
+}
+.main-section-profile .detail-entry ul {
+    list-style-type:none;
+}
+.main-section-profile .detail-entry ul li{
+    display:flex;
+    gap: 7px;
+}
+.main-section-profile .detail-entry ul li span{
+    color: var(--default-btn-color);
+    cursor: pointer;
+}
+
+.main-section-profile .detail-option ul{
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    color: var(--default-font-color);
+    margin-top: 30px;
+}
+.main-section-profile .detail-option ul{
+    font-size: 14px;
+    font-weight: bolder;
+}
+.main-section-profile .detail-option ul li.active{
+    color: var(--default-btn-color);
+}
+
+.main-section-profile .option-in-detail p {
+    border-top: 1px solid var(--default-background);
+    border-bottom: 1px solid var(--default-background);
+    padding: 10px 30px;
+}
+.main-section-profile .detail-section {
+    display:flex;
+    gap: 15px;
+    line-height: 1.1;
+}
+.main-section-profile .detail-section .img img{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.main-section-profile .detail-section .intro-detail {
+    line-height: .3;
+    font-size: 13px;
+    margin-top: 8px;
+}
+.main-section-profile .post-section .post-para p {
+    color: var(--default-font-color);
+	text-align: justify;
+	line-height: 1.2;
+}
+
+/* end of profile detail page */

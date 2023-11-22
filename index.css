@@ -64,6 +64,9 @@ body {
 	justify-content: center;
 	flex-direction: column;
 }
+.nav-link {
+    display: flex!important;
+}
 .desktop-view .nav-link i {
 	color: black;
 }
@@ -74,11 +77,11 @@ body {
 .desktop-view .nav-link:hover {
 	border-bottom: 2px solid var(--default-btn-color);
 }
-.desktop-view .nav-link i:focus,
+/* .desktop-view .nav-link i:focus,
 .desktop-view .nav-link i:hover {
 	background: var(--default-btn-color);
 	color: #fff;
-}
+} */
 
 /* desktop view ends */
 
@@ -166,6 +169,22 @@ body {
 .notification ul li:hover {
 	background: var(--default-background);
 }
+
+/* notification count starts */
+.notification_count {
+    background: var(--default-background);
+    width: 17px!important;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 10px;
+    position: relative;
+    top: -2px;
+    left: -12px;
+}
+/* notification count ends */
 /* Notification ends */
 
 /* on click profile tab */
@@ -493,3 +512,4 @@ input.form-control.ask_input:focus {
     cursor: pointer;
 }
 /* comment section ends */
+

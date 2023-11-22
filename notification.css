@@ -68,17 +68,17 @@ body{
 .desktop-view .nav-link i{
     color: black;
 }
-.desktop-view .nav-link i:hover{
+/* .desktop-view .nav-link i:hover{
     background:#fff;
-}
+} */
 .desktop-view .nav-link:focus, .desktop-view .nav-link:hover {
     
     border-bottom: 2px solid var(--default-btn-color);
 }
-.desktop-view .nav-link i:focus, .desktop-view .nav-link i:hover {
+/* .desktop-view .nav-link i:focus, .desktop-view .nav-link i:hover {
     background: var(--default-btn-color);
     color: #fff;
-}
+} */
 
 /* desktop view ends */
 
@@ -160,53 +160,31 @@ ul.space li a.btn-primary:focus{box-shadow:none!important;}
 /* main section starts */
 .main-section{
     background: #fff;
-    padding: 15px;
+    padding: 0;
 }
-.main-section h4.discover-spaces{
-    padding-bottom: 15px;
-    color: var(--default-btn-color);
+.main-section .ques_title p{
+    opacity: .8;
+    padding: 0;
+    margin: 0;
 }
-.main-section p.might-like{
-    font-weight: bold;
+.main-section .ques_title{
     border-bottom: 1px solid var(--default-background);
-    padding: 10px;
-    opacity: .9;
+    padding: 5px 15px;
 }
-
-.main-section .space-content img{
-    width: 60px;
-    height: 50px;
-    margin-right: 15px;
+.main-section .ques_title i{
+    color: #fff;
+    background: var(--default-btn-color);
+    margin-right: 10px;
 }
-.main-section .space-content .space-detail{
-    line-height: .5;
-    display: flex;
-    justify-content: space-between;
-}
-.main-section .space-content .space-detail .follow{
-    margin-top:20px;
-}
-.main-section .space-content .space-detail .btn i{
-    font-size: 12px;
-    border: 1px solid var(--default-border-color);
-}
-.main-section .space-content .space-detail .followers{
-    font-size:10px;
-    margin-top: -5px;
-    color: var(--default-font-color);
-}
-
-.main-section .space-content .space-detail p.description{
-    margin-top: -10px;
-    text-transform: capitalize;
-    opacity: .9;
-}
-.main-section .space-content{
-    padding-top: 5px;
+.main-section .ques-section{
     border-bottom: 1px solid var(--default-background);
     cursor: pointer;
 }
-.main-section .space-content:hover{
-    background: var(--default-background);
+.active{background: #aecbfa;}
+.main-section .ques-section p{
+    font-weight: bold;
+    padding: 0 12px;
 }
+
+
 /* main section ends */

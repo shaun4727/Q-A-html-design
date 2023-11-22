@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./following.css">
+    <link rel="stylesheet" href="./notification.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Q&A</title>
   </head>
@@ -19,9 +19,9 @@
                 <div class="col-lg-10 offset-lg-1 col-md-10 col-sm-12 offset-md-1">
                     <div class="row">
                         <ul class="nav col-sm-4 col-lg-4 col-md-4">
-                            <li class="nav-item"><a href="index.html" class="nav-link" title="Home"><i class="material-icons">home</i></a></li>
-                            <li class="nav-item"><a href="question.html" class="nav-link" title="Answer"><i class="material-icons">question_answer</i></a></li>
-                            <li class="nav-item"><a href="following.html" class="nav-link" title="Follow"><i class="material-icons">web</i></a></li>
+                            <li class="nav-item"><a href="" class="nav-link" title="Home"><i class="material-icons">home</i></a></li>
+                            <li class="nav-item"><a href="" class="nav-link" title="Answer"><i class="material-icons">question_answer</i></a></li>
+                            <li class="nav-item"><a href="" class="nav-link" title="Follow"><i class="material-icons">web</i></a></li>
                             <li class="nav-item"><a href="" class="nav-link" title="Spaces"><i class="material-icons">assistant_photo</i></a></li>  
                             <li class="nav-item"><a href="" class="nav-link" title="Notifications"><i class="material-icons">notifications_active</i></a></li>  
                         </ul>
@@ -57,12 +57,12 @@
             <span id="mobile-menu-close" class="display-none"><i class="material-icons" id="mobile-menu-close">close</i></span>
         </div>
         <div class="slide-in-menu display-none" id="slide-menu">
-            <ul class="nav d-flex flex-column">
-                <li class="nav-item"><a href="" class="nav-link mobile-nav" title="Home"><i class="material-icons mx-2">home</i> Home</a></li>
-                <li class="nav-item"><a href="" class="nav-link mobile-nav" title="Answer"><i class="material-icons mx-2">question_answer</i>Answer</a></li>
-                <li class="nav-item"><a href="" class="nav-link mobile-nav" title="Follow"><i class="material-icons mx-2">web</i>Follow</a></li>
-                <li class="nav-item"><a href="" class="nav-link mobile-nav" title="Spaces"><i class="material-icons mx-2">assistant_photo</i>Spaces</a></li>  
-                <li class="nav-item"><a href="" class="nav-link mobile-nav" title="Notifications"><i class="material-icons mx-2">notifications_active</i>Notifications</a></li>  
+            <ul class="nav col-sm-4 col-lg-4 col-md-4">
+                <li class="nav-item"><a href="index.html" class="nav-link" title="Home"><i class="material-icons">home</i></a></li>
+                <li class="nav-item"><a href="question.html" class="nav-link" title="Answer"><i class="material-icons">question_answer</i></a></li>
+                <li class="nav-item"><a href="following.html" class="nav-link" title="Follow"><i class="material-icons">web</i></a></li>
+                <li class="nav-item"><a href="" class="nav-link" title="Spaces"><i class="material-icons">assistant_photo</i></a></li>  
+                <li class="nav-item"><a href="" class="nav-link" title="Notifications"><i class="material-icons">notifications_active</i></a></li>  
             </ul>
         </div>
     </nav>
@@ -74,30 +74,40 @@
                 <div class="row" style="margin: 0 60px;">
                     <!-- space part starts -->
                     <ul class="nav col-lg-2 col-md-2 col-sm-12 d-flex flex-column space">
-                        <li> </li>
+                        <li> <a href="" class="btn btn-primary"><i class="material-icons">add</i><span>Create Space</span></a> </li>
+                        <li> <a href=""><img src="./images/profile.png" class="img-fluid" alt=""> <span>Space Title</span></a> </li>
+                        <li> <a href=""><img src="./images/profile.png" class="img-fluid" alt=""> <span>Space Title</span></a> </li>
+                        <li> <a href=""><img src="./images/profile.png" class="img-fluid" alt=""> <span>Space Title</span></a> </li>
+                        <li> <a href=""><img src="./images/profile.png" class="img-fluid" alt=""> <span>Space Title</span></a> </li>
+                        <li> <a href=""><img src="./images/profile.png" class="img-fluid" alt=""> <span>Space Title</span></a> </li>
+                        <li> <a href=""><img src="./images/profile.png" class="img-fluid" alt=""> <span>Space Title</span></a> </li>
+                        <li> <a href=""><img src="./images/profile.png" class="img-fluid" alt=""> <span>Space Title</span></a> </li>
+                        <li> <a href=""><img src="./images/profile.png" class="img-fluid" alt=""> <span>Space Title</span></a> </li>
+                        <li> <a href=""><img src="./images/profile.png" class="img-fluid" alt=""> <span>Space Title</span></a> </li>
+                        <li> <a href=""><img src="./images/profile.png" class="img-fluid" alt=""> <span>Space Title</span></a> </li>
+                        <li> <a href=""><img src="./images/profile.png" class="img-fluid" alt=""> <span>Space Title</span></a> </li>
+                        <li> <a href=""><img src="./images/profile.png" class="img-fluid" alt=""> <span>Space Title</span></a> </li>
                     </ul>
                     <!-- space part ends -->
                     <div class="col-lg-7 col-md-7 col-sm-12 main-section">
-                        <h4 class="discover-spaces">Discover Spaces</h4>
-                        <p class="might-like">Spaces you might like </p>
-                        <div class="space-content d-flex">
-                            <img src="./images/profile.png" class="img-fluid" alt="">
-                            <div class="space-detail">
-                                <div>
-                                    <h6>Chat GPT</h6>
-                                    <p class="followers">24.6k followers</p>
-                                    <p class="description">platform to connect and share tips</p>
-                                </div>
-                                <button class="btn follow"> <i class="material-icons">settings_input_antenna</i> Follow</button>
-                            </div>
+                        <div class="ques_title d-flex">
+                            <i class="material-icons">star</i><p>Notifications for you</p>
                         </div>
-
-
-                       
-
-
-
-
+                        <div class="ques-section active">
+                            <p>How do I stop my Windows 10 scheduled update to Windows 11?</p>
+                        </div>
+                        <div class="ques-section">
+                            <p>How do I stop my Windows 10 scheduled update to Windows 11?</p>
+                        </div>
+                        <div class="ques-section">
+                            <p>How do I stop my Windows 10 scheduled update to Windows 11?</p>
+                        </div>
+                        <div class="ques-section">
+                            <p>How do I stop my Windows 10 scheduled update to Windows 11?</p>
+                        </div>
+                        <div class="ques-section">
+                            <p>How do I stop my Windows 10 scheduled update to Windows 11?</p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -82,47 +82,28 @@ body {
 	background: var(--default-btn-color);
 	color: #fff;
 } */
+@media only screen and (min-width: 621px){
+    .top-margin{
+        margin: 85px 0;
+    }
+}
+
 
 /* desktop view ends */
 
 /* mobile view starts */
-@media only screen and (max-width: 1195px) {
+@media only screen and (max-width: 620px) {
 	.mobile-view {
 		cursor: pointer;
 	}
 	.mobile-view {
 		display: block;
 	}
-	.slide-in-menu {
-		display: block;
-	}
-	.slide-in-menu {
-		width: 250px;
-		height: 700px;
-		position: relative;
-		left: -250px;
-		transition-property: left;
-	}
 
-	.slide-in-menu-duration {
-		left: 0px;
-		transition-duration: 0.5s;
-	}
-	.display-none {
-		display: none;
-	}
-	.mobile-nav {
-		color: #000;
-		display: flex;
-		flex-direction: row;
-		justify-content: start;
-	}
-	#slide-menu {
-		box-shadow: 5px 10px 18px #888888;
-	}
 	.desktop-view {
 		display: none;
 	}
+
 }
 
 /* mobile view ends */
@@ -131,7 +112,7 @@ body {
 .suggested_ques {
 	background: #fff;
 	margin-top: 10px;
-	display:none;
+	/* display:none; */
 }
 .suggested_ques ul {
 	list-style-type: none;
@@ -195,7 +176,7 @@ body {
 	background: #fff;
 	margin: 0;
 	padding: 15px 0;
-	right: 230px;
+	right: 33px;
 	width: 250px;
 }
 .profile-box img {
@@ -231,14 +212,67 @@ ul.space li a.btn-primary {
 ul.space li a.btn-primary:focus {
 	box-shadow: none !important;
 }
+
+/* mobile design */
+.mobile-space{
+    background: #fff;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+.mobile-space .btn-primary {
+    background: var(--default-btn-color);
+    border: none;
+    height: 37px;
+    display: flex;
+}
+.mobile-space .space-list {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-top:7px;
+}
+.mobile-space .space-list .btn:hover{
+    background:#c5c3c3 
+}
+
+.mobile-space .btn-space{
+    background: var(--default-background);
+    border: none;
+    height: 37px;
+    display: flex;
+}
+.mobile-space .btn-primary:focus {
+	box-shadow: none !important;
+}
+
+@media only screen and (max-width: 620px){
+    .space{
+        display:none!important;
+    }
+}
+@media only screen and (min-width: 621px){
+    .mobile-space{
+        display:none;
+    }
+}
 /* space part ends */
 
 /* ask or answer section starts */
+@media only screen and (max-width: 620px){
+    .main-section{
+        width:100%!important;
+    }
+}
+
 .ask_answer {
 	background: #fff;
 	width: 100%;
-	height: 130px;
 	padding: 15px;
+}
+.ask_answer  .row1{
+    padding: 5px 15px;
+    display: flex;
+    gap: 5px;
 }
 .ask_answer .row1 .profile_img {
 	width: 50px;
@@ -252,9 +286,6 @@ ul.space li a.btn-primary:focus {
 }
 
 .ask_input {
-	width: 80%;
-	float: left;
-	margin: 7px 0 0 15px;
 	border-radius: 30px;
 	background: var(--default-background);
 }
@@ -292,7 +323,6 @@ input.form-control.ask_input:focus {
 	padding: 15px;
 	margin-top: 15px;
 	background: #fff;
-	height: 88%;
 }
 .main-section .post-section .question {
 	text-align: justify;
@@ -308,7 +338,6 @@ input.form-control.ask_input:focus {
 }
 .main-section .post-section .row1 .profile_img .inner_row1 {
 	line-height: 0.5px;
-	width: 80%;
 	float: left;
 	margin-left: 15px;
 	margin-top: 15px;
@@ -364,6 +393,7 @@ input.form-control.ask_input:focus {
 	text-align: right;
 	cursor: pointer;
 }
+.main-section .post-section .row2 .no-of-ans:hover{text-decoration:underline;}
 .main-section .post-section .row2 .up_down_btn .upvote-sec {
 	border-right: 1px solid var(--default-border-color);
 	cursor: pointer;
@@ -391,9 +421,11 @@ input.form-control.ask_input:focus {
 	height: 2px;
 }
 .main-section .post-section .row2 .up_down_btn .down_vote {
-	width: 100%;
-	cursor: pointer;
-    margin: 5px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .main-section .post-section .row2 .up_down_btn .down_vote:hover {
 	background: var(--default-background);
@@ -435,12 +467,11 @@ input.form-control.ask_input:focus {
     width: 100%;
     justify-content: space-between; 
     align-items: center;
+    gap: 5px;
+    margin-top:15px;
 }
 .comment-sec .input-field{flex-grow:1;}
 .comnt-input{
-    width: 94%;
-	float: left;
-	margin: 7px 0 0 15px;
 	border-radius: 30px;
 	background: var(--default-background)
 }
@@ -510,6 +541,13 @@ input.form-control.ask_input:focus {
 
 .comments-all .btn-element{
     cursor: pointer;
+}
+
+@media only screen and (max-width: 400px){
+    .hide-small{
+        display:none;
+    }
+
 }
 /* comment section ends */
 

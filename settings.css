@@ -1,0 +1,282 @@
+body {
+	background: var(--body-background);
+}
+
+/* Navbar styling starting */
+
+/* desktop view */
+.mobile-view {
+	display: none;
+}
+.slide-in-menu {
+	display: none;
+}
+.desktop-view {
+	background: #fff;
+	box-shadow: 5px 2px 40px rgba(0, 0, 0, 0.2);
+}
+.profile {
+	width: 75px;
+}
+
+.profile img {
+	width: 50px;
+	border: 1px solid #fff;
+	border-radius: 66%;
+	height: 50px;
+}
+
+.add-question {
+}
+.nav-search {
+	height: 37px;
+	margin-top: 5px;
+	border: 1px solid var(--default-border-color);
+	padding: 0px;
+}
+
+.nav-search .input-box span {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.nav-search .input-box input {
+	border: none;
+}
+.nav-search .input-box input:focus {
+	box-shadow: none;
+}
+.add-question {
+	height: 40px;
+	background-color: var(--default-btn-color);
+	border: none;
+}
+.add-question:focus,
+.add-question:active {
+	box-shadow: none;
+	border: none;
+}
+.add-question:hover {
+	background: var(--default-btn-hover);
+}
+.nav-item {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.nav-link {
+    display: flex!important;
+}
+.desktop-view .nav-link i {
+	color: black;
+}
+.desktop-view .nav-link i:hover {
+	background: #fff;
+}
+.desktop-view .nav-link:focus,
+.desktop-view .nav-link:hover {
+	border-bottom: 2px solid var(--default-btn-color);
+}
+/* .desktop-view .nav-link i:focus,
+.desktop-view .nav-link i:hover {
+	background: var(--default-btn-color);
+	color: #fff;
+} */
+@media only screen and (min-width: 621px){
+    .top-margin{
+        margin: 85px 0;
+    }
+}
+
+
+/* desktop view ends */
+
+/* mobile view starts */
+@media only screen and (max-width: 620px) {
+	.mobile-view {
+		cursor: pointer;
+	}
+	.mobile-view {
+		display: block;
+	}
+
+	.desktop-view {
+		display: none;
+	}
+
+}
+
+/* mobile view ends */
+
+/* suggested questions starts */
+.suggested_ques {
+	background: #fff;
+	margin-top: 10px;
+	display:none;
+}
+.suggested_ques ul {
+	list-style-type: none;
+	padding: 0px;
+}
+.suggested_ques ul li {
+	padding: 5px 15px;
+	border-bottom: 1px solid var(--default-background);
+	cursor: pointer;
+}
+.suggested_ques ul li:hover {
+	background: var(--default-background);
+}
+/* suggested question ends */
+/* Notification starts */
+.notification {
+    background: #fff;
+    margin-top: -20px;
+    position: absolute;
+    width: 300px;
+    left: 270px;
+    text-align: center;
+    z-index: 9;
+    display:none;
+}
+.notification ul {
+	list-style-type: none;
+	padding: 0px;
+}
+.notification ul li {
+	padding: 5px 15px;
+	border-bottom: 1px solid var(--default-background);
+	cursor: pointer;
+}
+.notification ul li:hover {
+	background: var(--default-background);
+}
+
+/* notification count starts */
+.notification_count {
+    background: var(--default-background);
+    width: 17px!important;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 10px;
+    position: relative;
+    top: -2px;
+    left: -12px;
+}
+/* notification count ends */
+/* Notification ends */
+
+/* on click profile tab */
+.profile-box ul {
+	position: absolute;
+	top: 55px;
+	list-style: none;
+	background: #fff;
+	margin: 0;
+	padding: 15px 0;
+	right: 33px;
+	width: 250px;
+    display:none;
+}
+.profile-box img {
+	width: 50px;
+	border: 1px solid #fff;
+	border-radius: 66%;
+	height: 50px;
+}
+.profile-box ul li {
+	padding: 0px 15px;
+}
+/* on click profile tab ends */
+
+/* navbar styling ends */
+
+
+/* settings section starts */
+
+.settings{
+    background: #fff;
+    padding: 15px;
+}
+
+.settings h1{
+    font-size:16px;
+    font-weight: bolder;
+    border-bottom: 1px solid var(--default-background);
+    padding-bottom: 5px;
+}
+.settings h1.conn-acc{
+    margin-top: 25px;
+}
+
+
+.settings .setting-sec{
+    display:flex;
+}
+.settings .setting-sec span{
+    flex-basis:40%;
+}
+
+.settings .setting-sec div{
+    flex-basis: 60%;
+}
+
+.settings .setting-sec .tab{
+    display:flex;
+    gap:15px;
+}
+.settings .setting-sec .tab span{
+    display:flex;
+    color: var(--default-btn-color);
+    flex-basis: 100%;
+    cursor: pointer;
+}
+.settings .setting-sec .tab span:hover{
+    color: var(--default-btn-hover);
+}
+.settings .account{
+    display:flex;
+    
+}
+.settings .account .detail{
+    display:flex;
+    gap: 10px;
+}
+.settings .account .detail span{
+    color: var(--default-btn-color);
+}
+.settings .account .icon{
+    display:flex;
+    gap: 5px;
+    align-items: start;
+    flex-basis: 40%;
+}
+.settings .account .icon img{
+    width: 20px;
+    height: 20px;
+}
+
+@media only screen and (min-width: 1160px){
+    .settings-width{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 600px){
+    .settings .setting-sec{
+        flex-direction: column;
+        border-bottom: 1px solid var(--default-background);
+    }
+    .settings .setting-sec:nth-child(5){
+        border:none;
+    }
+    .settings .setting-sec .tab{
+        gap:5px;
+    }
+    .settings .account{
+        flex-direction: column;
+        
+    }
+}

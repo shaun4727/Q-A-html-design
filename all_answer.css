@@ -79,6 +79,11 @@ body{
     background: var(--default-btn-color);
     color: #fff;
 }
+@media only screen and (min-width: 621px){
+    .top-margin{
+        margin: 85px 0;
+    }
+}
 
 /* desktop view ends */
 
@@ -173,7 +178,7 @@ body{
 
 .post-sec .profile{width:100%; display:flex; align-items:center; border-bottom:1px solid var(--default-background);}
 .post-sec .profile .profile-detail{line-height:.3; margin:10px 0 0 7px;}
-.post-sec .profile .profile-detail p{display:flex; flex-direction: row; width:100%; align-items:center;}
+.post-sec .profile .profile-detail p{display:flex; flex-direction: row; width:100%; align-items:center; flex-wrap:wrap;}
 .post-sec .profile .profile-detail p:first-child .follow{cursor:pointer;}
 .post-sec .profile .profile-detail p:first-child .name{font-weight:bolder; cursor:pointer;}
 .post-sec .profile .profile-detail p:last-child{font-size:12px; }
@@ -182,7 +187,17 @@ body{
 
 .post-sec .post-para{margin-top:5px; }
 .post-sec .post-para p{color:var(--default-font-color); text-align:justify; line-height:1.1;}
-
+@media only screen and (max-width: 800px){
+    .post-sec .profile .profile-detail p{
+        line-height:1;
+    }
+}
+@media only screen and (max-width: 767px){
+    .reverse-flex {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
 
     /* post action */
     .post-sec .action-section{display:flex; justify-content:space-between;}

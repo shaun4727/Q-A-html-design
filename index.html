@@ -16,10 +16,10 @@
   <body>
     <nav>
         <div class="container-fluid desktop-view fixed-top">
-            <div class="row" style="margin: 0 60px;">
+            <div class="row">
                 <div class="col-lg-10 offset-lg-1 col-md-10 col-sm-12 offset-md-1">
                     <div class="row">
-                        <ul class="nav col-sm-4 col-lg-4 col-md-4">
+                        <ul class="nav col-sm-6 col-lg-6 col-md-6">
                             <li class="nav-item"><a href="index.html" class="nav-link" title="Home"><i class="material-icons">home</i></a></li>
                             <li class="nav-item"><a href="question.html" class="nav-link" title="Answer"><i class="material-icons">question_answer</i></a></li>
                             <li class="nav-item"><a href="following.html" class="nav-link" title="Follow"><i class="material-icons">web</i></a></li>
@@ -42,22 +42,23 @@
                                 </ul>
                            </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 d-flex justify-content-end">
+                        <div class="col-lg-2 col-md-2 col-sm-2 d-flex justify-content-end">
                             <div class="profile d-flex flex-column justify-content-center">
                                 <img src="./images/profile.png" class="img-fluid" alt="">
                             </div>
-                            <div class="profile-box">
-                                <ul>
-                                    <li><img src="./images/profile.png" class="img-fluid" alt=""></li>
-                                    <li style="font-weight: bolder;">Shaun Hossain</li>
-                                    <li style="font-size:12px; color:var(--default-font-color); border-bottom: 1px solid var(--default-background);">Software Engineer</li>
-                                    <li style="display: flex; flex-direction: row; align-items: center; margin-top: 15px; color: var(--default-btn-color); font-weight:bolder;"> <span class="material-icons">settings_power</span> Logout</li>
-                                </ul>
 
-                            </div>
-                            <div class="btn-question d-flex justify-content-center flex-column">
+                            <!-- <div class="btn-question d-flex justify-content-center flex-column">
                                 <button class="btn btn-primary add-question">Add Questions</button>
-                            </div>
+                            </div> -->
+                        </div>
+                        <div class="profile-box">
+                            <ul>
+                                <li><img src="./images/profile.png" class="img-fluid" alt=""></li>
+                                <li style="font-weight: bolder;">Shaun Hossain</li>
+                                <li style="font-size:12px; color:var(--default-font-color); border-bottom: 1px solid var(--default-background);">Software Engineer</li>
+                                <li style="display: flex; flex-direction: row; align-items: center; margin-top: 15px; color: var(--default-btn-color); font-weight:bolder;"> <span class="material-icons">settings_power</span> Logout</li>
+                            </ul>
+
                         </div>
                     </div>
                 </div>
@@ -73,27 +74,49 @@
             </ul>
        </div>
         <div class="container-fluid mobile-view">
-            <span id="mobile-menu"><i class="material-icons" id="mobile-menu-open">menu</i></span>
-            <span id="mobile-menu-close" class="display-none"><i class="material-icons" id="mobile-menu-close">close</i></span>
+            <span id="mobile-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="material-icons" id="mobile-menu-open">menu</i></span>
         </div>
-        <div class="slide-in-menu display-none" id="slide-menu">
-            <ul class="nav d-flex flex-column">
-                <li class="nav-item"><a href="" class="nav-link mobile-nav" title="Home"><i class="material-icons mx-2">home</i> Home</a></li>
-                <li class="nav-item"><a href="" class="nav-link mobile-nav" title="Answer"><i class="material-icons mx-2">question_answer</i>Answer</a></li>
-                <li class="nav-item"><a href="" class="nav-link mobile-nav" title="Follow"><i class="material-icons mx-2">web</i>Follow</a></li>
-                <li class="nav-item"><a href="" class="nav-link mobile-nav" title="Spaces"><i class="material-icons mx-2">assistant_photo</i>Spaces</a></li>  
-                <li class="nav-item"><a href="" class="nav-link mobile-nav" title="Notifications"><i class="material-icons mx-2">notifications_active</i>Notifications</a></li>  
-            </ul>
-        </div>
+
+
+
+        <!-- Slide in menu -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="nav d-flex flex-column">
+                    <li class="nav-item"><a href="" class="nav-link mobile-nav" title="Home"><i class="material-icons mx-2">home</i> Home</a></li>
+                    <li class="nav-item"><a href="" class="nav-link mobile-nav" title="Answer"><i class="material-icons mx-2">question_answer</i>Answer</a></li>
+                    <li class="nav-item"><a href="" class="nav-link mobile-nav" title="Follow"><i class="material-icons mx-2">web</i>Follow</a></li>
+                    <li class="nav-item"><a href="" class="nav-link mobile-nav" title="Spaces"><i class="material-icons mx-2">assistant_photo</i>Spaces</a></li>  
+                    <li class="nav-item"><a href="" class="nav-link mobile-nav" title="Notifications"><i class="material-icons mx-2">notifications_active</i>Notifications</a></li>  
+                </ul>
+            </div>
+          </div>
     </nav>
 
     <!-- main section starts -->
     <div class="container-fluid">
-        <div class="row" style="margin: 85px 0;">
+        <div class="row top-margin" >
             <div class="col-lg-10 offset-lg-1 col-md-10 col-sm-12 offset-md-1">
-                <div class="row" style="margin: 0 60px;">
+                <div class="row">
                     <!-- space part starts -->
-                    <ul class="nav col-lg-2 col-md-2 col-sm-12 d-flex flex-column space">
+                    <div class="col-sm-12 mobile-space-view">
+                        <div class="mobile-space">
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addSpaceModal"><i class="material-icons">add</i>Add Space</button>
+                            <div class="space-list">
+                                <button class="btn btn-space">space</button>
+                                <button class="btn btn-space">space</button>
+                                <button class="btn btn-space">space</button>
+                                <button class="btn btn-space">space</button>
+                                <button class="btn btn-space">space</button>
+                                <button class="btn btn-space">space</button>
+                                <button class="btn btn-space">space</button>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="nav col-lg-2 col-md-2 col-sm-3 d-flex flex-column space">
                         <li> <a href="" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#addSpaceModal"><i class="material-icons">add</i><span>Create Space</span></a> </li>
                         <li> <a href=""><img src="./images/profile.png" class="img-fluid" alt=""> <span>Space Title</span></a> </li>
                         <li> <a href=""><img src="./images/profile.png" class="img-fluid" alt=""> <span>Space Title</span></a> </li>
@@ -108,8 +131,9 @@
                         <li> <a href=""><img src="./images/profile.png" class="img-fluid" alt=""> <span>Space Title</span></a> </li>
                         <li> <a href=""><img src="./images/profile.png" class="img-fluid" alt=""> <span>Space Title</span></a> </li>
                     </ul>
+
                     <!-- space part ends -->
-                    <div class="col-lg-7 col-md-7 col-sm-12 main-section">
+                    <div class="col-lg-8 col-md-10 col-sm-9 main-section">
                         <div class="ask_answer d-flex flex-column">
                             <div class="row1">
                                 <div class="profile_img"><img src="./images/profile.png" alt=""></div>
@@ -178,13 +202,13 @@
                                         </div> 
                                     </div>
                                     <div class="comnt_share">
-                                        <div class="comment d-flex flex-row justify-content-center"><i class="material-icons">comment</i> <span>Comment</span></div>
-                                        <div class="share d-flex flex-row justify-content-center mx-2"> <i class="material-icons">share</i> <span>Share</span> </div>
+                                        <div class="comment d-flex flex-row justify-content-center"><i class="material-icons">comment</i> <span class="hide-small">Comment</span></div>
+                                        <div class="share d-flex flex-row justify-content-center mx-2"> <i class="material-icons">share</i> <span class="hide-small">Share</span> </div>
                                     </div>
                                 </div>
                                 <div class="comment-sec">
                                     <div class="letter-pic">S</div>
-                                    <div class="input-field"><input type="text" class="form-control comnt-input" placeholder="What do you want to ask?"></div>
+                                    <div class="input-field"><input type="text" class="form-control comnt-input" placeholder="comment.."></div>
                                     <div class="comment"><button class="btn">Comment</button></div>
                                 </div>
                                 <div class="comments-all">
@@ -195,8 +219,8 @@
                                             a piece of a treatise on the theory of ethics, very popular during
                                            the Renaissance.</p>
                                            <div class="button-group">
-                                            <i class="fa-solid fa-thumbs-up"></i> 
-                                            <i class="fa-solid fa-thumbs-down"></i> 
+                                            <i class="fa-solid fa-thumbs-up" style="cursor: pointer;"></i> 
+                                            <i class="fa-solid fa-thumbs-down" style="cursor: pointer;"></i> 
                                             <span class="btn-element"><strong>Reply</strong></span>
                                         </div>
                                     </div>
@@ -240,20 +264,7 @@
     </div>
     <!-- main section ends -->
     <script>
-        (function () {
-            document.querySelector("#mobile-menu").addEventListener("click",(e)=>{
-                document.querySelector("#mobile-menu").classList.toggle("display-none");
-                document.querySelector("#mobile-menu-close").classList.toggle("display-none");
-                document.querySelector("#slide-menu").classList.toggle("slide-in-menu-duration");
-                document.querySelector("#slide-menu").classList.toggle("display-none");
-            })  // I will invoke myself
-            document.querySelector("#mobile-menu-close").addEventListener("click",(e)=>{
-                document.querySelector("#mobile-menu").classList.toggle("display-none");
-                document.querySelector("#mobile-menu-close").classList.toggle("display-none");
-                document.querySelector("#slide-menu").classList.toggle("slide-in-menu-duration"); 
-                document.querySelector("#slide-menu").classList.toggle("display-none");
-            });
-        })();
+
     </script>
     <!-- Optional JavaScript; choose one of the two! -->
 

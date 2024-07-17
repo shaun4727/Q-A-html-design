@@ -1,85 +1,113 @@
-.whole-page{
-    background: var(--default-background);
+.whole-page {
+	background: var(--default-background);
+	height: 100vh;
 }
 
-.login-root-div{
-    background: #fff;
-    height: 500px;
-    
+.login-root-div {
+	background: #fff;
+	height: 500px;
 }
 
 .login-root-div .qa_logo {
-    margin: 30px auto;
-    display: block;
+	margin: 30px auto;
+	display: block;
 }
 
-.login-root-div .login_form{
-    margin-top: 35px;
+.login-root-div .login_form {
+	margin-top: 35px;
 }
 
-.login-root-div .login_form .first_part{
-    width: 50%;
-    padding-left: 15%;
-    margin-top: 50px;
-    position: relative;
+.login-root-div .login_form .first_part {
+	width: 50%;
+	padding-left: 15%;
+	margin-top: 50px;
+	position: relative;
 }
-.login-root-div .login_form .first_part:after{
-    content: '';
-    position: absolute;
-    top: -25px;
-    right: 0;
-    width: 1px;
-    height: 200px;
-    background: var(--default-background);
+.login-root-div .login_form .first_part:after {
+	content: '';
+	position: absolute;
+	top: -25px;
+	right: 0;
+	width: 1px;
+	height: 200px;
+	background: var(--default-background);
 }
-.login-root-div .login_form .first_part p{
-    border: 1px solid var(--default-border-color);
-    width: 90%;
-    padding: 5px;
-    text-transform: capitalize;
-    cursor: pointer;
+.login-root-div .login_form .first_part p {
+	border: 1px solid var(--default-border-color);
+	width: 90%;
+	padding: 5px;
+	text-transform: capitalize;
+	cursor: pointer;
 }
-.login-root-div .login_form .first_part h5{
-    color: var(--default-font-color);
-    cursor: pointer;
+.login-root-div .login_form .first_part h5 {
+	color: var(--default-font-color);
+	cursor: pointer;
 }
-.login-root-div .login_form .second_part{
-    width:50%;
-    padding-left: 3%;
-    padding-right: 15%;
-    margin-top: 0px;
+.login-root-div .login_form .second_part {
+	width: 50%;
+	padding-left: 3%;
+	padding-right: 15%;
+	margin-top: 0px;
 }
-#signupModal .modal-body input:focus,.login-root-div .login_form .second_part input:focus{
-    box-shadow: none;
+#signupModal .modal-body input:focus,
+.login-root-div .login_form .second_part input:focus {
+	box-shadow: none;
 }
-.login-root-div .login_form .second_part .pass{
-    margin-top: 15px;
+.login-root-div .login_form .second_part .pass {
+	margin-top: 15px;
 }
-.login-root-div .login_form .second_part h6{
-    font-size: 22px;
-    text-transform: uppercase;
-    border-bottom: 1px solid var(--default-border-color);
-    padding-bottom: 15px;
+.login-root-div .login_form .second_part h6 {
+	font-size: 22px;
+	text-transform: uppercase;
+	border-bottom: 1px solid var(--default-border-color);
+	padding-bottom: 15px;
 }
-.login-root-div .login_form .second_part .forgot_login p{
-    margin-top: 12px;
-    cursor: pointer;
+.login-root-div .login_form .second_part .forgot_login p {
+	margin-top: 12px;
+	cursor: pointer;
 }
 .login-btn {
-    background: var(--login-btn);
-    color: #fff;
-    margin-top: 10px;
-    width: 100px;
-    text-align: center;
-    margin: 10px 5px;
-    box-shadow: 10px 10px 18px var(--default-background);
-    height: 30px;
-    cursor: pointer;
-    border: 1px solid var(--login-btn);
-    border-radius: 25px;
+	background: var(--login-btn);
+	color: #fff;
+	margin-top: 10px;
+	width: 100px;
+	text-align: center;
+	margin: 10px 5px;
+	box-shadow: 10px 10px 18px var(--default-background);
+	height: 30px;
+	cursor: pointer;
+	border: 1px solid var(--login-btn);
+	border-radius: 25px;
 }
 
 /* Sign up modal height */
-#signupModal .modal-content{
-    margin-top: 160px;
+#signupModal .modal-content {
+	margin-top: 160px;
+}
+
+@media (max-width: 500px) {
+	.login_form {
+		display: flex !important;
+		flex-direction: column-reverse !important;
+		padding: 25px;
+	}
+
+	.login-root-div {
+		background: #fff;
+		height: 670px;
+	}
+	.login-root-div .login_form .first_part:after {
+		display: none;
+	}
+	.login-root-div .login_form .first_part {
+		width: 100%;
+		padding: 0px;
+	}
+	.login-root-div .login_form .second_part {
+		width: 100%;
+		padding: 0;
+	}
+	.login-root-div .login_form .first_part p {
+		width: 100%;
+	}
 }

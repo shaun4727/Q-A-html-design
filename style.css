@@ -1,10 +1,11 @@
-:root{
-    --default-font-color: #ACA2A2;
-    --default-border-color: #ACA2A2;
-    --default-btn-color: #006064;
-    --default-btn-hover: #011c1d;
-    --default-background: #ddd;
-    --body-background: #80808029;
-    --ocean-blue: #27DAC4;
-    --login-btn: #212121;
+:root {
+  --default-font-color: #aca2a2;
+  --default-border-color: #aca2a2;
+  --default-btn-color: #006064;
+  --default-btn-hover: #011c1d;
+  --default-background: #ddd;
+  --body-background: #80808029;
+  --ocean-blue: #27dac4;
+  --login-btn: #212121;
+  --transparent-background: #00606459;
 }
